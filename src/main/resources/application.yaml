@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://host.minikube.internal:5433/postgres
+    username: postgres
+    password: root
+  jpa:
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: create
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+server:
+  port: 8081
